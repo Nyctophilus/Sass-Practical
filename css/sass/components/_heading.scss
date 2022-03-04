@@ -1,0 +1,26 @@
+.heading {
+  position: relative;
+  margin-bottom: $padd/1.5;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 75%;
+    height: 1.5px;
+    background-color: #9c9c9c;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
+  h2 {
+    background-color: $themeColor;
+    padding: 10px $padd;
+    color: white;
+    width: fit-content;
+    margin: 0 auto;
+    text-transform: uppercase;
+    border-radius: 20px;
+  }
+}

@@ -1,0 +1,96 @@
+footer {
+  background-color: #d6d6d6;
+  padding: 1.5rem 0;
+  color: $textDarker;
+  .foot {
+    flex-basis: ((100%-54%)/2);
+    &:nth-child(1) {
+      flex-basis: 50%;
+    }
+
+    .blog {
+      margin-bottom: 2rem;
+      .img-box {
+        position: relative;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 106%;
+          height: 106%;
+          background-color: #bebebe;
+          z-index: 1;
+        }
+        img {
+          position: relative;
+          height: 150px;
+          width: 150px;
+          object-fit: cover;
+          z-index: 2;
+        }
+      }
+
+      .blog-text {
+        flex-basis: 70%;
+
+        h4 {
+          margin-top: 10px;
+          color: $themeColor;
+          letter-spacing: -1px;
+        }
+        p {
+          line-height: 1.5;
+          color: $textColor;
+        }
+      }
+    }
+
+    ul {
+      &:not(:last-of-type) {
+        margin-bottom: 2rem;
+      }
+      li {
+        color: $textColor;
+        &:not(:last-of-type) {
+          margin-bottom: 0.4rem;
+        }
+
+        span {
+          color: $themeColor;
+        }
+      }
+    }
+
+    form {
+      input:not(input[type="submit"]),
+      textarea {
+        background-color: white;
+        border: none;
+        margin-bottom: 0.5rem;
+        color: $textColor;
+        padding: 10px 15px;
+        width: 100%;
+        border-radius: 8px;
+      }
+      textarea {
+        height: $padd * 2;
+        resize: vertical;
+      }
+    }
+  }
+
+  .copy-rights {
+    padding-top: 1.2rem;
+    border-top: 1px solid #c3c2c2;
+    .text {
+      color: $textColor;
+    }
+    .author {
+      color: $textColor;
+      span {
+        color: $themeColor;
+        font-weight: bold;
+      }
+    }
+  }
+}

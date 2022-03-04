@@ -1,0 +1,34 @@
+p.read {
+  color: $textColor;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+p.read + a.read-more {
+  color: $themeColor;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "\f101";
+    font-family: "FontAwesome";
+    font-size: 12px;
+    top: 5px;
+    right: -15px;
+    transition: $trans;
+  }
+  &:hover::after {
+    right: -20px;
+  }
+}
+
+.main-button {
+  background-color: #e2494c;
+  padding: 8px 20px;
+  text-transform: uppercase;
+  color: white;
+  display: block;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+}

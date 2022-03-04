@@ -1,0 +1,13 @@
+@include reset();
+
+body {
+  background-color: #f6f6f6;
+  font: {
+    family: Tahoma;
+  }
+  height: 6000px;
+}
+
+::placeholder {
+  color: #b3b3b3;
+}

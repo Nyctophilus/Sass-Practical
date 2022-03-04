@@ -1,0 +1,35 @@
+header {
+  padding: 20px 0;
+  border-bottom: 1px solid $textColor;
+  .logo {
+    flex-basis: 30%;
+
+    h1 {
+      margin: 0;
+      font-size: 40px;
+    }
+    p {
+      font-size: 14px;
+      color: $textColor;
+    }
+  }
+  .navbar {
+    flex-basis: 50%;
+    background-color: $themeColor;
+    color: white;
+    font-weight: bold;
+    justify-content: space-between;
+    padding: 20px 15px;
+
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    li {
+      a {
+        &:hover {
+          color: #ddd;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+* {
+  @include prefixer(box-sizing, border-box, webkit o ms);
+}
+
+.container {
+  margin: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@include breakpoints(mobile) {
+  .container {
+    max-width: 520px;
+  }
+}
+@include breakpoints(small) {
+  .container {
+    max-width: 740px;
+  }
+}
+@include breakpoints(medium) {
+  .container {
+    max-width: 940px;
+  }
+}
+@include breakpoints(large) {
+  .container {
+    max-width: 1150px;
+  }
+}
+@include breakpoints(xlarge) {
+  .container {
+    max-width: 1200px;
+  }
+}

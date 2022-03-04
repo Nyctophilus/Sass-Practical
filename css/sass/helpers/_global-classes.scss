@@ -1,0 +1,58 @@
+.rounded {
+  border-radius: 20px;
+}
+.lil-rounded {
+  border-radius: 8px;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.g-center {
+  display: grid;
+  place-items: center;
+}
+
+.f {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.f-space-between {
+  justify-content: space-between;
+}
+
+.cent-horz {
+  justify-content: center;
+}
+
+.cent-vert {
+  align-items: center;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.upper-case {
+  text-transform: uppercase;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.padd {
+  padding-top: $padd;
+  padding-bottom: $padd;
+}
+
+.img-responsive {
+  max-width: 100%;
+  margin: auto;
+}
+
+.bold {
+  font-weight: bold;
+}
