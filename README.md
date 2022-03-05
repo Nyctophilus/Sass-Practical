@@ -11,6 +11,7 @@
   <li>Used Placeholders %.</li>
   <li>Advanced Solid Environment Structure.</li>
   <li>Fully responsive on each device even tinny mobiles.</li>
+  <li>99% preformance ... 100% SEO.</li>
 </menu>
 
 <details>
