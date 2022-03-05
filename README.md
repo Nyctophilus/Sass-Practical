@@ -14,12 +14,13 @@
   <li>99% preformance ... 100% SEO.</li>
 </menu>
 
+<br>
+<br>
+
 <details>
     <summary>Website Stats Report</summary>
     <img src="report.png"/>
 </details>
-<br>
-<br>
 
 <br>
 <br>
