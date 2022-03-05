@@ -2,6 +2,15 @@ p.read {
   color: $textColor;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
+
+  @include breakpoints(max-small) {
+    & {
+      max-width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0.5rem;
+    }
+  }
 }
 
 p.read + a.read-more {
@@ -31,4 +40,57 @@ p.read + a.read-more {
   border: none;
   border-radius: 8px;
   font-weight: bold;
+}
+
+// Blades Icon
+.blades {
+  animation: spin 1s infinite linear;
+  height: 20px;
+  width: 20px;
+
+  position: absolute;
+  top: 35px;
+  right: 40px;
+
+  display: none;
+  @include breakpoints(max-small) {
+    display: initial;
+
+    &.toggle {
+      display: none;
+    }
+  }
+
+  div {
+    border: 4px solid transparent;
+    border-left-color: $themeColor;
+    height: 20px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform-origin: top left;
+    width: 20px;
+
+    &:nth-child(1) {
+      transform: rotate(72deg) translateY(5px);
+    }
+    &:nth-child(2) {
+      transform: rotate(144deg) translateY(5px);
+    }
+    &:nth-child(3) {
+      transform: rotate(216deg) translateY(5px);
+    }
+    &:nth-child(4) {
+      transform: rotate(288deg) translateY(5px);
+    }
+    &:nth-child(5) {
+      transform: rotate(360deg) translateY(5px);
+    }
+  }
+}
+@include animationPrefixer(spin) {
+  to {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }

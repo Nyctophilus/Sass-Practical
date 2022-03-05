@@ -28,7 +28,11 @@
 
 // Gird system >> Media Queries Mixin
 @mixin breakpoints($point) {
-  @if $point == "mobile" {
+  @if $point == "tinny-mobile" {
+    @media (max-width: 400px) {
+      @content;
+    }
+  } @else if $point == "mobile" {
     @media (max-width: 576px) {
       @content;
     }

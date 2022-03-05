@@ -18,6 +18,12 @@
   display: flex;
   flex-wrap: wrap;
 }
+.f-md {
+  @include breakpoints(min-medium) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 
 .f-space-between {
   justify-content: space-between;
@@ -41,6 +47,12 @@
 
 .text-center {
   text-align: center;
+}
+
+.text-center-md {
+  @include breakpoints(max-small) {
+    text-align: center;
+  }
 }
 
 .padd {

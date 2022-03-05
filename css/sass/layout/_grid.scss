@@ -6,30 +6,15 @@
   margin: auto;
   padding-left: 20px;
   padding-right: 20px;
-}
+  position: relative;
 
-@include breakpoints(mobile) {
-  .container {
-    max-width: 520px;
+  @include breakpoints(medium) {
+    width: 750px;
   }
-}
-@include breakpoints(small) {
-  .container {
-    max-width: 740px;
+  @include breakpoints(large) {
+    width: 970px;
   }
-}
-@include breakpoints(medium) {
-  .container {
-    max-width: 940px;
-  }
-}
-@include breakpoints(large) {
-  .container {
-    max-width: 1150px;
-  }
-}
-@include breakpoints(xlarge) {
-  .container {
-    max-width: 1200px;
+  @include breakpoints(xlarge) {
+    width: 1170px;
   }
 }

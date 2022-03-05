@@ -1,35 +1,85 @@
 header {
   padding: 20px 0;
   border-bottom: 1px solid $textColor;
-  .logo {
-    flex-basis: 30%;
 
-    h1 {
-      margin: 0;
-      font-size: 40px;
+  .container {
+    @include breakpoints(max-medium) {
+      flex-direction: column;
     }
-    p {
-      font-size: 14px;
-      color: $textColor;
-    }
-  }
-  .navbar {
-    flex-basis: 50%;
-    background-color: $themeColor;
-    color: white;
-    font-weight: bold;
-    justify-content: space-between;
-    padding: 20px 15px;
+    .logo {
+      flex-basis: 30%;
+      @include breakpoints(max-medium) {
+        text-align: center;
+      }
 
-    display: flex;
-    width: fit-content;
-    height: fit-content;
-    li {
-      a {
-        &:hover {
-          color: #ddd;
+      @include breakpoints(max-small) {
+        text-align: left;
+        width: 100%;
+      }
+      h1 {
+        margin: 0;
+        font-size: 40px;
+        color: $themeColor;
+      }
+      p {
+        font-size: 14px;
+        color: $textColor;
+      }
+    }
+    .navbar {
+      flex-basis: 60%;
+      background-color: $themeColor;
+      color: white;
+      font-weight: bold;
+      justify-content: space-between;
+      padding: 20px;
+      display: flex;
+      width: fit-content;
+      height: fit-content;
+
+      @include breakpoints(max-large) {
+        font-size: 0.8rem;
+      }
+
+      @include breakpoints(max-medium) {
+        width: 100%;
+      }
+
+      @include breakpoints(max-small) {
+        flex-direction: column;
+        width: fit-content;
+        margin: 0 0 1rem auto;
+        text-align: center;
+        display: none;
+        flex-basis: unset;
+
+        &.toggle {
+          overflow: hidden;
+          display: block;
+          animation: heightSlide 0.3s;
+        }
+
+        li {
+          margin-bottom: 0.5rem;
+        }
+      }
+
+      li {
+        a {
+          &:hover {
+            color: #ddd;
+          }
         }
       }
     }
+  }
+}
+
+@keyframes heightSlide {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 120px;
   }
 }

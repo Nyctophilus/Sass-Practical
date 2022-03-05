@@ -1,13 +1,27 @@
 @include reset();
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #f6f6f6;
   font: {
     family: Tahoma;
   }
-  height: 6000px;
 }
 
 ::placeholder {
   color: #b3b3b3;
+}
+
+@include animationPrefixer(FadeIn) {
+  0%,
+  50% {
+    opacity: 0;
+  }
+  100%,
+  25% {
+    opacity: 1;
+  }
 }

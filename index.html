@@ -36,46 +36,85 @@
           <h1>Composition</h1>
           <p>Free PSd Website Template</p>
         </div>
+
+        <div class="blades">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+
         <ul class="navbar lil-rounded upper-case">
-          <li><a href="#">Home Page</a></li>
-          <li><a href="#">Style Demo</a></li>
-          <li><a href="#">Full Width</a></li>
-          <li><a href="#">Dropdown</a></li>
-          <li><a href="#">Link Text</a></li>
+          <li><a href="#slider">Home Page</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#players">Our Team</a></li>
+          <li><a href="#gallery">Our Gallery</a></li>
+          <li><a href="#footer">Contact Us</a></li>
         </ul>
       </div>
     </header>
 
     <!-- Slider -->
-    <div class="slider padd">
+    <div class="slider padd" id="slider">
       <div class="container">
         <q class="text-center">
           Lorem ipsum dolor sit amet, consectetur
           adipisicing elit. Voluptatum, magni eligendi
           voluptatem asperiores voluptate corporis.
         </q>
-        <img
-          src="https://images.pexels.com/photos/10540135/pexels-photo-10540135.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
-          alt="slider image one"
-        />
+        <ul class="slider-imgs">
+          <li class="active">
+            <img
+              src="https://images.pexels.com/photos/268432/pexels-photo-268432.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              alt="slider image one"
+            />
+          </li>
+          <li>
+            <img
+              src="https://images.pexels.com/photos/11284054/pexels-photo-11284054.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              alt="slider image two"
+            />
+          </li>
+          <li>
+            <img
+              src="https://images.pexels.com/photos/158536/butterfly-common-blue-restharrow-polyommatus-icarus-158536.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              alt="slider image three"
+            />
+          </li>
+          <li>
+            <img
+              src="https://images.pexels.com/photos/326055/pexels-photo-326055.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              alt="slider image four"
+            />
+          </li>
+          <li>
+            <img
+              src="https://images.pexels.com/photos/1988681/pexels-photo-1988681.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=500&w=1260"
+              alt="slider image five"
+            />
+          </li>
+        </ul>
         <ul class="bullets f cent-horz">
-          <li class="circle active"></li>
-          <li class="circle"></li>
-          <li class="circle"></li>
-          <li class="circle"></li>
-          <li class="circle"></li>
+          <li class="circle active" data-i="0"></li>
+          <li class="circle" data-i="1"></li>
+          <li class="circle" data-i="2"></li>
+          <li class="circle" data-i="3"></li>
+          <li class="circle" data-i="4"></li>
         </ul>
       </div>
     </div>
 
     <!-- Services -->
-    <div class="services">
+    <div class="services" id="services">
       <div class="container">
         <div class="heading">
           <h2>Our Services</h2>
         </div>
 
-        <div class="servs f f-space-between">
+        <div
+          class="servs text-center-md f-md f-space-between"
+        >
           <div class="serv">
             <div class="serv-head f cent-vert">
               <i class="fas fa-globe-africa fa-2x"></i>
@@ -128,13 +167,13 @@
     </div>
 
     <!-- Our Players -->
-    <div class="our-players padd">
+    <div class="our-players padd" id="players">
       <div class="container">
         <div class="heading">
           <h2>Our Players</h2>
         </div>
 
-        <div class="players f f-space-between">
+        <div class="players f-md f-space-between">
           <div class="player">
             <img
               src="https://images.pexels.com/photos/747964/pexels-photo-747964.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
@@ -224,28 +263,28 @@
     </div>
 
     <!-- Lorem Ipsum Section -->
-    <div class="lorem padd">
+    <div class="lorem" id="gallery">
       <div class="container">
         <div class="heading">
           <h2>Lorem Ipsum</h2>
         </div>
 
-        <div class="content f f-space-between">
-          <div class="img-box">
+        <div class="content f-md f-space-between">
+          <div class="img-box g-center">
             <img
               src="https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
               alt="lorem one"
             />
           </div>
 
-          <div class="img-box">
+          <div class="img-box g-center">
             <img
               src="https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
               alt="lorem two"
             />
           </div>
 
-          <div class="img-box">
+          <div class="img-box g-center">
             <img
               src="https://images.pexels.com/photos/205926/pexels-photo-205926.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
               alt="lorem three"
@@ -256,7 +295,7 @@
     </div>
 
     <!-- Footer -->
-    <footer>
+    <footer id="footer">
       <div class="container">
         <div class="foots f f-space-between">
           <div class="foot">
@@ -352,7 +391,7 @@
         <div class="copy-rights f f-space-between">
           <div class="text">
             All Rights Reserved &copy; 2022 - Original
-            Design: Template OS
+            Design: OS Templates
           </div>
           <div class="author">
             Developed By
@@ -361,5 +400,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="app.js"></script>
   </body>
 </html>

@@ -22,5 +22,9 @@
     margin: 0 auto;
     text-transform: uppercase;
     border-radius: 20px;
+
+    @include breakpoints(max-medium) {
+      padding: 0.5rem $padd/2;
+    }
   }
 }
